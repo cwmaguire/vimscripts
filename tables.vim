@@ -25,7 +25,11 @@ function GetLineNumbers()
   let first_blank_line_up = search("^$", 'nbW')
   let start_line = first_blank_line_up + 1
   let first_blank_line_down = search("^$", 'nW')
-  let end_line = first_blank_line_down - 1
+  if first_blank_line_down > 0
+    let end_line = first_blank_line_down - 1
+  else
+    let end_line = line('$')
+  endif
   return [start_line, end_line]
 endf
 
