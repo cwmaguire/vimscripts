@@ -1,9 +1,8 @@
 # vimscripts
 Toys I've created with Vimscript
 
-tables.vim
-
-- Table()
+- tables.vim
+  - Table()
   - TableFromRange() range
   - TableWithRange(first_line, last_line)
   - UndoTable()
